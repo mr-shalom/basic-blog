@@ -210,7 +210,7 @@ function generatePostId(e) {
   console.log(postObj.newsPaper);
   saveToSessionStorage();
   setTimeout(() => {
-    // window.location.href = "/pages/post.html";
+    window.location.href = "/pages/post.html";
   }, 500);
 }
 
