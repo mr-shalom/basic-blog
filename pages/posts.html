@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/posts.css" />
+    <title>Posts</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="max-width navBar">
+        <h1 class="logo">
+          <a href="home.html" class="logo-link">
+            <img src="/assets/logo.png" alt="logo" class="logo-img" />
+          </a>
+        </h1>
+        <ul class="links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="posts.html">Posts</a></li>
+          <li><a href="about.html">Commentaries</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+
+        <div class="accountAndMobileMenu">
+          <button type="button" class="contact-btn">Contact Us</button>
+          <figure class="userphoto">
+            <div class="">
+              <img src="/img/user.gif" alt="user-photo" class="removePhoto" />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="user-profile-picture"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </div>
+            <figcaption class="username">user1</figcaption>
+          </figure>
+
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="hamburger-open"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="posts-hero-section">
+        <div class="max-width">
+          <h4 class="hero-posts-badge">Information Crib</h4>
+          <h1 class="hero-posts-title">READ TO ENRICH YOUR SOUL...</h1>
+          <p class="hero-posts-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi
+            nemo, magnam consequuntur voluptatem obcaecati illum.
+          </p>
+        </div>
+      </section>
+      <section class="posts-fetched-section">
+        <div class="max-width saved-and-fetched-posts">
+          <aside class="left-section">
+            <div class="expand-btn-container">
+              <button class="expand-saved-post">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="expand-saved-post-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15"
+                  />
+                </svg>
+              </button>
+            </div>
+            <ul class="saved-posts-list">
+              <li>
+                <div class="top-saved-post">
+                  <h1 class="saved-post-title">I am post number 1</h1>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="open-post"
+                    data-id="1"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="bottom-saved-post closePane" data-id="1">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur eum excepturi minus dolorum quibusdam quaerat?
+                  </p>
+                  <div class="delete-saved-post-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="delete-saved-post"
+                      data-id="1"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="top-saved-post">
+                  <h1 class="saved-post-title">I am post number 1</h1>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="open-post"
+                    data-id="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="bottom-saved-post closePane" data-id="2">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur eum excepturi minus dolorum quibusdam quaerat?
+                  </p>
+                  <div class="delete-saved-post-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="delete-saved-post"
+                      data-id="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="top-saved-post">
+                  <h1 class="saved-post-title">I am post number 1</h1>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="open-post"
+                    data-id="3"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </div>
+
+                <div class="bottom-saved-post closePane" data-id="3">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur eum excepturi minus dolorum quibusdam quaerat?
+                  </p>
+                  <div class="delete-saved-post-container">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="delete-saved-post"
+                      data-id="3"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m14.74 9-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 0 1-2.244 2.077H8.084a2.25 2.25 0 0 1-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 0 0-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 0 1 3.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 0 0-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 0 0-7.5 0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </aside>
+          <div class="right-section">
+            <div class="sort-container">
+              <form class="filter-form">
+                <input
+                  type="text"
+                  name="text"
+                  class="filter-field"
+                  placeholder="Enter text to search..."
+                />
+              </form>
+            </div>
+            <div class="post-fetched-container">
+              <!-- <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article>
+              <article class="article article--1">
+                <figure class="article-img-container">
+                  <img
+                    src="/assets/thisday_newspaper.jpeg"
+                    alt=""
+                    class="article-thumbnail"
+                  />
+                </figure>
+                <div class="article-text-heighlights">
+                  <h1 class="article-text-title">Article Title...</h1>
+                  <p class="article-text-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius commodi laudantium est iusto...
+                    <a href="#" class="read-more">Read more</a>
+                  </p>
+                </div>
+              </article> -->
+            </div>
+            <div class="pagination-container">
+              <button class="previous-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="prev-btn-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </button>
+              <p class="page-counter">
+                <span class="first-page">1</span>
+                of
+                <span class="last-page">5</span>
+              </p>
+              <button class="next-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="next-btn-icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class="loader hide-loader">
+              <p class="loader-text">Please wait ...</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="max-width grid-links">
+        <ul class="footer-link">
+          <h1 class="footer-title">Home</h1>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Blogs</a></li>
+          <li class="new-badge"><a href="#">Resources</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+
+        <ul class="footer-link">
+          <h1 class="footer-title">News</h1>
+          <li><a href="#">Trending Stories</a></li>
+          <li><a href="#">Featured Videos</a></li>
+          <li><a href="#">Technology</a></li>
+          <li><a href="#">Health</a></li>
+          <li><a href="#">Politics</a></li>
+          <li><a href="#">Environment</a></li>
+        </ul>
+
+        <ul class="footer-link">
+          <h1 class="footer-title">Blogs</h1>
+          <li><a href="#">Quantum Computing</a></li>
+          <li><a href="#">Ai Ethics</a></li>
+          <li><a href="#">Space Exploration</a></li>
+          <li class="new-badge"><a href="#">Biotechnology</a></li>
+          <li><a href="#">Renewable Energy</a></li>
+          <li><a href="#">Biohacking</a></li>
+        </ul>
+
+        <ul class="footer-link">
+          <h1 class="footer-title">Podcasts</h1>
+          <li class="new-badge"><a href="#">Ai Revolution</a></li>
+          <li><a href="#">TechTalk Ai</a></li>
+          <li><a href="#">Ai Conversations</a></li>
+        </ul>
+
+        <ul class="footer-link">
+          <h1 class="footer-title">Resources</h1>
+          <li>
+            <div class="treasure-container view-resources-container">
+              <a href="#" class="resource-link">
+                Whitepapers
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="arror-right-resource"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="treasure-container view-resources-container">
+              <a href="#" class="resource-link">
+                Ebooks
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="arror-right-resource"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="treasure-container view-resources-container">
+              <a href="#" class="resource-link">
+                Reports
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="arror-right-resource"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="treasure-container view-resources-container">
+              <a href="#" class="resource-link">
+                Research Papers
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="arror-right-resource"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="max-width all-rights-reserved">
+        <p class="terms-and-conditions">Terms & Conditions | Privacy</p>
+
+        <div class="social-media-icons">
+          <a href="#" class="twitter-link">
+            <ion-icon name="logo-twitter" class="twitter-icon"></ion-icon>
+          </a>
+          <a href="#" class="twitter-link">
+            <ion-icon name="logo-linkedin" class="linkedin-icon"></ion-icon>
+          </a>
+          <a href="#" class="twitter-link">
+            <ion-icon name="logo-instagram" class="instagram-icon"></ion-icon>
+          </a>
+        </div>
+
+        <p class="copyright">&copy;2025 FutureBlog. All rights reserved.</p>
+      </section>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="/scripts/posts.js" type="module"></script>
+  </body>
+</html>

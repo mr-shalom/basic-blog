@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <section class="page-container">
+      <main class="index-container">
+        <nav class="nav-tab">
+          <button class="signupTab active-btn" data-set="1">Sign Up</button>
+          <button class="loginTab" data-set="2">Login</button>
+        </nav>
+        <form action="" class="form form--1 new-user-form active" data-set="1">
+          <h1 class="form-title">First Time ? Sign Up!</h1>
+
+          <section class="inputFields-container">
+            <label class="new-username-container">
+              Username
+              <!-- prettier-ignore -->
+              <input type="text" name="username" class="newusername" id="newusername" required/>
+            </label>
+            <label class="new-email-container">
+              Email
+              <!-- prettier-ignore -->
+              <input type="email" name="email" class="newemail" id="newemail" required />
+            </label>
+            <label class="new-password-container">
+              Password
+              <!-- prettier-ignore -->
+              <input type="password" name="newpassword" class="newpassword" id="newpassword" required />
+            </label>
+            <button class="new-submit-btn">Submit</button>
+          </section>
+        </form>
+
+        <form action="" class="form form--2 existing-user-form" data-set="2">
+          <h1 class="form-title">Login !</h1>
+          <section class="inputFields-container">
+            <label class="existing-email-container">
+              Email
+              <!-- prettier-ignore -->
+              <input type="email" name="email" class="oldemail" id="email" required />
+            </label>
+            <label class="existing-p-7assword-container">
+              Password
+              <!-- prettier-ignore -->
+              <input type="password" name="password" class="oldpassword" id="password" required />
+            </label>
+            <button class="old-login-btn">Login</button>
+          </section>
+        </form>
+      </main>
+      <section class="loader-container hideLoader">
+        <p class="loader">Loading...</p>
+      </section>
+    </section>
+    <script src="/scripts/formPage.js" type="module"></script>
+  </body>
+</html>

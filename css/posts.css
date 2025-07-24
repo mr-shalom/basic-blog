@@ -1,0 +1,359 @@
+:root {
+  --yellow: #ffd11a;
+  --header-bg: #1a1a1a;
+  --absolute-dark: #141414;
+  --inactive-text: #7e7e81;
+  --active-text: #fff;
+  --badge-bg: #333;
+  --heart-col: #ff5500;
+  --padding-bg: #262626;
+}
+
+.max-width {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* ************************************** MAIN SECTION STYLES *********/
+
+.main {
+  /* scroll-padding-top: 20rem; */
+  background-color: var(--absolute-dark);
+  padding: 10rem 0 0;
+  min-height: max-content;
+}
+
+.posts-hero-section {
+  height: max-content;
+  background-color: var(--absolute-dark);
+  padding: 5rem 0;
+}
+
+.hero-posts-badge {
+  width: max-content;
+  background-color: var(--badge-bg);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  color: var(--active-text);
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.hero-posts-title {
+  color: var(--active-text);
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-posts-paragraph {
+  color: var(--inactive-text);
+  font-size: 1.3rem;
+}
+
+/**********************************  search  ****************************/
+
+.sort-container {
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-form {
+  background-color: var(--absolute-dark);
+  display: inline-block;
+  padding: 0.5rem;
+  min-width: 20rem;
+  border-radius: 1rem;
+  font-family: inherit;
+}
+
+.filter-field {
+  font-size: 1.6rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  background-color: var(--badge-bg);
+  color: var(--active-text);
+  font-family: inherit;
+}
+
+.filter-field::placeholder {
+  font-size: 1.1rem;
+  color: var(--active-text);
+  font-family: inherit;
+}
+
+.posts-fetched-section {
+  background-color: var(--header-bg);
+  padding: 5rem 0;
+  overflow: hidden;
+}
+
+.saved-and-fetched-posts {
+  display: flex;
+  gap: 1rem;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.right-section {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 3rem;
+}
+
+.left-section {
+  height: 80vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 3rem;
+  height: 100%;
+  overflow-y: auto;
+  min-width: 20rem;
+}
+
+.expand-btn-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.expand-saved-post {
+  background-color: var(--badge-bg);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 50%;
+  border: 0.1rem solid var(--inactive-text);
+  margin-bottom: 3rem;
+  cursor: pointer;
+}
+
+.saved-posts-list {
+  flex: 1;
+  height: 100%;
+  overflow: hidden scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.right-section::-webkit-scrollbar,
+.saved-posts-list::-webkit-scrollbar {
+  width: 0;
+  /* background-color: #fff; */
+}
+
+/* .right-section::-webkit-scrollbar-thumb,
+.saved-posts-list::-webkit-scrollbar-thumb {
+  background: var(--badge-bg);
+  border-radius: 10rem;
+}
+.right-section::-webkit-scrollbar-track,
+.saved-posts-list::-webkit-scrollbar-track {
+  background: var(--active-text);
+  border-radius: 10rem;
+} */
+
+.saved-posts-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.top-saved-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: var(--badge-bg);
+  padding: 0.5rem;
+}
+
+.saved-post-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--active-text);
+}
+
+.bottom-saved-post {
+  display: flex;
+  padding: 0.5rem;
+  height: 100%;
+}
+
+.bottom-saved-post p {
+  width: 100%;
+  color: var(--inactive-text);
+  font-size: 1.3rem;
+}
+
+.delete-saved-post-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.expand-saved-post-icon,
+.delete-saved-post,
+.open-post {
+  width: 2rem;
+  color: var(--active-text);
+  cursor: pointer;
+}
+
+.post-fetched-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 2rem 1rem;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  border: 0.1rem solid var(--badge-bg);
+  background-color: var(--header-bg);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  height: 100%;
+}
+
+.article-img-container {
+  height: 10rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.article-img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.article-thumbnail {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article-text-heighlights {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  height: 100%;
+}
+
+.article-text-title {
+  color: ;
+  font-size: 1.35rem;
+  color: var(--active-text);
+}
+
+.article-text-description {
+  line-height: 1.4;
+  font-size: 1.3rem;
+  color: var(--inactive-text);
+  flex: 1;
+  height: 100%;
+}
+
+.read-more {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--active-text);
+}
+
+.pagination-container {
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.previous-btn,
+.next-btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 1rem 2.5rem;
+  background-color: var(--inactive-text);
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
+  border-radius: 0.5rem;
+}
+
+.previous-btn:hover,
+.next-btn:hover {
+  background-color: #ccc;
+}
+
+.prev-btn-icon,
+.next-btn-icon {
+  width: 2rem;
+  color: #1a1a1a;
+}
+
+.page-counter {
+  color: var(--active-text);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.loader {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+}
+
+.loader-text {
+  color: var(--active-text);
+  font-size: 3rem;
+  margin-top: 20rem;
+  text-shadow: rgba(0, 0, 0, 0.3);
+}
+
+.hide-loader {
+  display: none;
+}
+
+.hide-saved-posts-list,
+.closePane {
+  display: none;
+}
+
+.minimize {
+  min-width: max-content;
+}
+
+/* ********************************** END MAIN SECTION STYLES *********/
+
+@media (max-width: 800px) {
+  .post-fetched-container {
+    place-items: center;
+  }
+
+  .article {
+    max-width: 95%;
+  }
+}
