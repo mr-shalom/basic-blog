@@ -10,9 +10,18 @@ const prevBtn = document.querySelector(".previous-btn");
 const nextBtn = document.querySelector(".next-btn");
 const firstPage = document.querySelector(".first-page");
 const lastPage = document.querySelector(".last-page");
+let openBtn = document.querySelector(".hamburger-open");
+let closeBtn = document.querySelector(".hamburger-close");
 
 // POSTS APIs
 const POST_URL = "https://jsonplaceholder.typicode.com/posts";
+
+openBtn.addEventListener("click", () => {
+  document.querySelector(".mobile-nav").classList.remove("closeMenu");
+});
+closeBtn.addEventListener("click", function () {
+  document.querySelector(".mobile-nav").classList.add("closeMenu");
+});
 
 window.addEventListener("DOMContentLoaded", () => {
   fetchPosts();
@@ -92,6 +101,7 @@ function goToPreviousPage() {
   if (currentPage > 1) {
     currentPage--;
     displayPage(currentPage);
+    console.log();
   }
 }
 

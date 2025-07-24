@@ -3,6 +3,16 @@
 const backBtn = document.getElementById("back-btn");
 const displayPost = document.querySelector(".newspaper-and-text");
 
+let openBtn = document.querySelector(".hamburger-open");
+let closeBtn = document.querySelector(".hamburger-close");
+
+openBtn.addEventListener("click", () => {
+  document.querySelector(".mobile-nav").classList.remove("closeMenu");
+});
+closeBtn.addEventListener("click", function () {
+  document.querySelector(".mobile-nav").classList.add("closeMenu");
+});
+
 const POST_URL = "https://jsonplaceholder.typicode.com/posts";
 
 const newsPaperImg = [
